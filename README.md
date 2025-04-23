@@ -15,7 +15,7 @@ Players navigate through interconnected dungeon rooms filled with enemies, puzzl
 - Terminal-based user input (e.g., `move north`, `open chest`, `solve puzzle`)
 - Room-based exploration with directional movement
 - Combat with enemy entities
-- Inventory system with equippable gear (weapons and armor)
+- Inventory system with equipable gear (weapons and armor)
 - Puzzle system that unlocks rooms or reveals hidden chests
 - Persistent game state (saved via SQLite in Week 4)
 - Clean object-oriented design following academic standards

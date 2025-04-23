@@ -32,6 +32,7 @@ public class Puzzle extends GameObject {
         System.out.println("Puzzle: " + description);
         System.out.print("Your answer: ");
 
+        @SuppressWarnings("resource")
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         String input = scanner.nextLine();
 

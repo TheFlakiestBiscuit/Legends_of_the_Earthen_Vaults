@@ -56,4 +56,10 @@ public class Player extends Entity {
     public Room getCurrentRoom() {
         return currentRoom;
     }
+
+    @Override
+    public void act() {
+        // For now, the player doesn't take automatic action like enemies might
+        System.out.println(name + " is waiting for input...");
+    }
 }

@@ -20,6 +20,10 @@ public class Room {
         this.enemies = new ArrayList<>();
         this.objects = new ArrayList<>();
     }
+    public String getDescription() {
+        return description;
+    }
+    
 
     public void addExit(String direction, Room room) {
         exits.put(direction, room);
