@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 04/23/2025
- * Assignment: Legends of the Earthen Vaults - Week 3 Implementation
+ * Date: 05/01/2025
+ * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
  *
  * Abstract base class for all characters and combatants in the game.
  * Provides common fields and behavior for players and enemies.

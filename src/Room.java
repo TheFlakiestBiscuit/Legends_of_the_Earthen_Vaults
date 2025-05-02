@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 04/23/2025
- * Assignment: Legends of the Earthen Vaults - Week 3 Implementation
+ * Date: 05/01/2025
+ * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
  *
  * Represents a room in the dungeon with exits, enemies, and interactable objects.
  */
@@ -9,21 +9,32 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Room {
+    private String roomId;
     private String description;
     private HashMap<String, Room> exits;
     private ArrayList<Enemy> enemies;
     private ArrayList<GameObject> objects;
+    
 
-    public Room(String description) {
+    public Room(String roomId, String description) {
+        this.roomId = roomId;
         this.description = description;
         this.exits = new HashMap<>();
         this.enemies = new ArrayList<>();
         this.objects = new ArrayList<>();
     }
+
+    public String getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(String roomId) {
+        this.roomId = roomId;
+    }
+
     public String getDescription() {
         return description;
     }
-    
 
     public void addExit(String direction, Room room) {
         exits.put(direction, room);

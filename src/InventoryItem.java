@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 04/23/2025
- * Assignment: Legends of the Earthen Vaults - Week 3 Implementation
+ * Date: 05/01/2025
+ * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
  *
  * Represents an item that can be stored in the player's inventory.
  * Items may be consumable, equipable, or used to interact with puzzles.
@@ -53,6 +53,11 @@ public class InventoryItem {
     public int getDefenseBoost() {
         return defenseBoost;
     }
+
+    public boolean isUsable() {
+        return isConsumable || isEquipable;
+    }
+    
 
     @Override
     public String toString() {

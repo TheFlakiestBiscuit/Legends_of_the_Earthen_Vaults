@@ -12,7 +12,7 @@ Players navigate through interconnected dungeon rooms filled with enemies, puzzl
 
 ## Core Features
 
-- Terminal-based user input (e.g., `move north`, `open chest`, `solve puzzle`)
+- Terminal-based user input (e.g., `move north`, `interact chest`, `use potion`)
 - Room-based exploration with directional movement
 - Combat with enemy entities
 - Inventory system with equipable gear (weapons and armor)
@@ -40,7 +40,7 @@ Players navigate through interconnected dungeon rooms filled with enemies, puzzl
 ## Technologies
 
 - Java 17+
-- SQLite (integrated in later phases)
+- SQLite
 - Git & GitHub (Phase tagging for project tracking)
 
 ---
@@ -60,8 +60,8 @@ Players navigate through interconnected dungeon rooms filled with enemies, puzzl
 |------|-------|
 | Week 1 | Proposal |
 | Week 2 | Design Plan |
-| **Week 3** | Class Implementation *(current phase)* |
-| Week 4 | Database Integration |
+| Week 3 | Class Implementation |
+| **Week 4** | Database Integration *(current phase)* |
 | Week 5 | Final Submission & Polish |
 
 

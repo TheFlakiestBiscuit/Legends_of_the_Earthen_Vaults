@@ -1,13 +1,14 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 04/23/2035
- * Assignment: Legends of the Earthen Vaults - Week 3 Implementation
+ * Date: 05/01/2025
+ * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
  *
  * Represents the player character, including inventory and equipped items.
  */
 import java.util.ArrayList;
 
 public class Player extends Entity {
+    private int id;
     private ArrayList<InventoryItem> inventory;
     private Room currentRoom;
     private InventoryItem equippedWeapon;
@@ -19,6 +20,14 @@ public class Player extends Entity {
         this.inventory = new ArrayList<>();
         this.equippedWeapon = null;
         this.equippedArmor = null;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void move(String direction) {
@@ -57,9 +66,58 @@ public class Player extends Entity {
         return currentRoom;
     }
 
+    public void setHealth(int health) {
+        this.health = health;
+    }    
+
+    public ArrayList<InventoryItem> getInventory() {
+        return inventory;
+    }
+
+    public void showInventory() {
+        if (inventory.isEmpty()) {
+            System.out.println("Your inventory is empty.");
+        } else {
+            System.out.println("You are carrying:");
+            for (InventoryItem item : inventory) {
+                System.out.println("- " + item.getName() + ": " + item.getDescription());
+            }
+        }
+    }
+
+    public void useItem(String itemName) {
+        InventoryItem toUse = null;
+
+        for (InventoryItem item : inventory) {
+            if (item.getName().equalsIgnoreCase(itemName)) {
+                toUse = item;
+                break;
+            }
+        }
+
+        if (toUse == null) {
+            System.out.println("You don't have that item.");
+            return;
+        }
+
+        if (!toUse.isUsable()) {
+            System.out.println("You can't use that.");
+            return;
+        }
+
+        if (toUse.getName().equalsIgnoreCase("Healing Potion")) {
+            System.out.println("You drink the Healing Potion. You feel better.");
+            this.health = Math.min(100, this.health + 25);
+            System.out.println("Health: " + this.health);
+        }
+
+        if (toUse.isConsumable()) {
+            inventory.remove(toUse);
+        }
+    }
+
     @Override
     public void act() {
-        // For now, the player doesn't take automatic action like enemies might
         System.out.println(name + " is waiting for input...");
     }
 }

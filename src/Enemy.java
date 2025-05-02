@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 04/23/2025
- * Assignment: Legends of the Earthen Vaults - Week 3 Implementation
+ * Date: 05/01/2025
+ * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
  *
  * Represents an enemy the player may encounter in a room.
  * Inherits basic combat behavior from the Entity class.

@@ -3,5 +3,9 @@
         "equipable",
         "interactable",
         "lootable"
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\William\\Desktop\\School\\sqlite-jdbc-3.49.1.0.jar"
     ]
 }

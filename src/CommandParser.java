@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 04/23/2025
- * Assignment: Legends of the Earthen Vaults - Week 3 Implementation
+ * Date: 05/01/2025
+ * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
  *
  * Parses user input into actions and targets for the game engine.
  */
@@ -19,6 +19,10 @@ public class CommandParser {
 
     public boolean isValidCommand(String input) {
         String command = getCommandWord(input).toLowerCase();
-        return command.equals("move") || command.equals("interact") || command.equals("quit");
+        return command.equals("move") ||
+            command.equals("interact") ||
+            command.equals("quit") ||
+            command.equals("use") ||
+            command.equals("inventory");
     }
 }
