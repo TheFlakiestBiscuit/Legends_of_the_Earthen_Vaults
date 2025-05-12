@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 05/01/2025
- * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
+ * Date: 05/11/2025
+ * Assignment: Legends of the Earthen Vaults - Week 5 Implementation
  *
  * Represents a lootable chest that can contain inventory items.
  */
@@ -10,13 +10,11 @@ import java.util.ArrayList;
 public class Chest extends GameObject {
     private ArrayList<InventoryItem> contents;
     private boolean isOpened;
-    private boolean isSpecial; // Only special chests have unique behavior
 
     public Chest(String name, String description, boolean isSpecial) {
         super(name, description);
         this.contents = new ArrayList<>();
         this.isOpened = false;
-        this.isSpecial = isSpecial;
     }
 
     public void addItem(InventoryItem item) {

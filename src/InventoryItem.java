@@ -1,7 +1,7 @@
 /*****************************************************************************
  * Name: William Linke
- * Date: 05/01/2025
- * Assignment: Legends of the Earthen Vaults - Week 4 Implementation
+ * Date: 05/11/2025
+ * Assignment: Legends of the Earthen Vaults - Week 5 Implementation
  *
  * Represents an item that can be stored in the player's inventory.
  * Items may be consumable, equipable, or used to interact with puzzles.
