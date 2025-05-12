@@ -1,7 +1,7 @@
 /*****************************************************************************
- * Name: William Linke
+ *
  * Date: 05/11/2025
- * Assignment: Legends of the Earthen Vaults - Week 5 Implementation
+ * Legends of the Earthen Vaults - Week 5 Implementation
  *
  * Manages SQLite database operations using JDBC.
  */
